@@ -1,21 +1,17 @@
-# Contacts Project
+### Instructions
 
-This repo is a code-along with the first project in the [React Nanodegree program](https://www.udacity.com/course/react-nanodegree--nd019).
+You're given a starter template with dummy data.
 
-Most of the commits in this repository correspond to videos in the program.
+**Task**: Create a game that shows an equation of the form X+Y+Z=P. Here,
+X, Y, and Z should be random numbers, and P should be the proposed answer. The
+user should be able to answer whether it is true that the sum of X, Y, and Z
+equals the proposed answer P. The user gets a point for each question the user
+answers correctly. The score is displayed in this format: [number of correct
+answers]/[number of questions answered]. Every time the user answers a question,
+a new question that uses randomly generated numbers is displayed.
 
-## Project Setup
+Remember that a Component's constructor is the first thing that runs when the
+object is created. The render method gets called automatically every time the state changes
+inside of the component and anytime the value of the component's props changes.
 
-* clone the Project - `git clone https://github.com/udacity/reactnd-contacts-complete.git`
-* install the dependencies - `npm install`
-
-## Contributing
-
-Because this is a code-along project and the commits correspond to specific videos in the program, we will not be accepting pull requests.
-
-If you feel like there's a major problem, please open an issue to discuss the problem and potential resolution.
-
-## Contributing
-
-MIT
-# react-sample-projects
+This exercise will help you practice what you've learned in the course so far, including the trickiest part of React - managing state.
