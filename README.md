@@ -1,21 +1,31 @@
-# Contacts Project
+# Instructions
 
-This repo is a code-along with the first project in the [React Nanodegree program](https://www.udacity.com/course/react-nanodegree--nd019).
+Let's do something a little bit more complicated. Instead of displaying a
+list of users and their movies, this time you need to display a list of movies.
 
-Most of the commits in this repository correspond to videos in the program.
+For each movie in the list, there are two options:
 
-## Project Setup
+1. If the movie has been favorited, then display a list of all of the users who said that this movie was their favorite.
+2. If the movie has *not* been favorited, display some text stating that no one favorited the movie.
 
-* clone the Project - `git clone https://github.com/udacity/reactnd-contacts-complete.git`
-* install the dependencies - `npm install`
+As you go about tackling this project, try to make the app *modular* by breaking it into resusable React components.
 
-## Contributing
+## Example
 
-Because this is a code-along project and the commits correspond to specific videos in the program, we will not be accepting pull requests.
+```html
+<h2>Forrest Gump</h2>
+<p>Liked By:</p>
+<ul>
+  <li>Nicholas Lain</li>
+</ul>
 
-If you feel like there's a major problem, please open an issue to discuss the problem and potential resolution.
+<h2>Get Out</h2>
+<p>Liked By:</p>
+<ul>
+  <li>John Doe</li>
+  <li>Autumn Green</li>
+</ul>
 
-## Contributing
-
-MIT
-# react-sample-projects
+<h2>Autumn Green</h2>
+<p>None of the current users liked this movie</p>
+```
