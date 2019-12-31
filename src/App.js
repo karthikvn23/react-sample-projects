@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Users from './Users';
+import Movies from './Movies';
 
 /*
 Use React and the data below to display a list of users alongside their favorite movies.
@@ -97,10 +97,26 @@ const movies = {
     },
 };
 
+let profilesByMovieId = {}
+
+
 class App extends Component {
+    constructor(props){
+        super(props)
+        let moviesKeys = Object.keys(movies);
+
+
+        // Get the list of profiles for each movie
+        moviesKeys.map(
+            (movie) => {
+                            profilesByMovieId[movie] = profiles.filter((profile) => (movie == profile.favoriteMovieID))
+                        }
+        )
+        // console.log(profilesByMovieId)
+    }
     render() {
         return (
-            <Users profiles={profiles} users={users} movies={movies}/>
+            <Movies profiles={profiles} users={users} movies={movies} profilesByMovieId={profilesByMovieId}/>
         );
     }
 }
