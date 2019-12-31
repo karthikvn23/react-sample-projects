@@ -1,21 +1,39 @@
-# Contacts Project
+# Instructions
 
-This repo is a code-along with the first project in the [React Nanodegree program](https://www.udacity.com/course/react-nanodegree--nd019).
+Use React and the `profiles`, `users`, and `movies` data in `App.js` to display a list of users alongside their favorite movies.
 
-Most of the commits in this repository correspond to videos in the program.
+## Example
 
-## Project Setup
+The `users` object has the user "Jane Cruz":
 
-* clone the Project - `git clone https://github.com/udacity/reactnd-contacts-complete.git`
-* install the dependencies - `npm install`
+```js
+const users = {
+  1: {
+    id: 1,
+    name: 'Jane Cruz',
+    userName: 'coder',
+  }
+  .
+  .
+  .
+};
+```
 
-## Contributing
+And the `profiles` array has a combination of which users like which movies:
 
-Because this is a code-along project and the commits correspond to specific videos in the program, we will not be accepting pull requests.
+```js
+const profiles = [
+  {
+    id: 1,
+    userID: '1',
+    favoriteMovieID: '1',
+  },
+  .
+  .
+  .
+];
+```
 
-If you feel like there's a major problem, please open an issue to discuss the problem and potential resolution.
+From this information, one of the list items might look like this:
 
-## Contributing
-
-MIT
-# react-sample-projects
+> Jane Cruz's favorite movie is Planet Earth 1.
