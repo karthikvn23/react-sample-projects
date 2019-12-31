@@ -1,4 +1,4 @@
 ## Project Setup
 
-* clone the Project - `git clone https://github.com/udacity/reactnd-contacts-complete.git`
+* clone the Project
 * install the dependencies - `npm install`
